@@ -16,6 +16,8 @@
 // LCD CS to Arduino digital IO D10
 // LCD RS / DS to Arduino digital IO D9
 
+// https://www.instructables.com/Arduino-and-35-Inch-320x480-TFT-LCD-ILI9488-SPI-In/
+
 //Include Libraries
 #include "SPI.h"
 #include "Adafruit_GFX.h"
@@ -33,8 +35,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
 void setup() 
 {
 	Serial.begin(115200);
-    Serial.println("ILI9341 Test!"); 
-    Serial.println("DHT22 temperature / humidity sensor Test");
+ 	Serial.println("ILI9341 Test!"); 
+	Serial.println("DHT22 temperature / humidity sensor Test");
   
 	//Initialize TFT LCD
 	tft.begin();
