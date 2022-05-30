@@ -1,5 +1,8 @@
 //Experiment of 3.5 Inch LCD (320x480), ILI9488 SPI Interface driver
 //Adafruit ILI9341 library is modified for ILI9488 (320x480)
+// The Height and Width parameters at Adafruit_ILI9341.h file must be modified to
+// #define ILI9341_TFTWIDTH 320
+// #define ILI9341_TFTHEIGHT 480
 
 // LCD MOSI to Arduino digital IO D11
 // LCD SCLK to Arduino digital IO D13
