@@ -3,6 +3,13 @@
 // The Height and Width parameters at Adafruit_ILI9341.h file must be modified to
 // #define ILI9341_TFTWIDTH 320
 // #define ILI9341_TFTHEIGHT 480
+//
+// And at the Adafruit_ILI9341.cpp file, at the function Adafruit_ILI9341::begin(void), 
+// the following lines muct be modified for adapting ILI9488 device (320x480 pixels).
+// writecommand(ILI9341_DFUNCTR); // Display Function Control
+// writedata(0x02);
+// writedata(0x02);
+// writedata(0x3B);
 
 // LCD MOSI to Arduino digital IO D11
 // LCD SCLK to Arduino digital IO D13
